@@ -1,5 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
-.gitignore
+__pycache__/
 .idea/
 ApiManager/__pycache__/
 ApiManager/logic/__pycache__/
@@ -10,3 +10,4 @@ pyunitreport/__pycache__/
 BeautifulReport/__pycache__/
 Test Report.html
 ApiManager/templatetags/*.pyc
+logs
