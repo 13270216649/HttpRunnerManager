@@ -9,7 +9,7 @@ from json import JSONDecodeError
 import yaml
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Sum
-from djcelery.models import PeriodicTask
+# from djcelery.models import PeriodicTask
 
 from ApiManager.models import ModuleInfo, TestCaseInfo, TestReports, TestSuite
 from ApiManager.utils.operation import add_project_data, add_module_data, add_case_data, add_config_data, \

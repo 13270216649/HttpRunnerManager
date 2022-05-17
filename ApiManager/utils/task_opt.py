@@ -1,6 +1,6 @@
 import json
 
-from djcelery import models as celery_models
+# from djcelery import models as celery_models
 
 
 def create_task(name, task, task_args, crontab_time, desc):

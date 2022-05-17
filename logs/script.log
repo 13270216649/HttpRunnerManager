@@ -437,3 +437,303 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: '����_quant_login_out(����ǳ�)'
 2018-07-02 14:59:50,449 [HttpRunnerManager:78] [views:log_out] [INFO]- yinquanwang�˳�
 2018-07-02 14:59:52,333 [HttpRunnerManager:45] [views:login] [INFO]- yinquanwang ��¼�ɹ�
+2022-05-15 10:09:00,601 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2022-05-15 10:09:33,617 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 11, in <module>
+    from djcelery.models import PeriodicTask
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:13:11,973 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 11, in <module>
+    from djcelery.models import PeriodicTask
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/djcelery/models.py", line 15, in <module>
+    from celery.utils.timeutils import timedelta_seconds
+ModuleNotFoundError: No module named 'celery.utils.timeutils'
+2022-05-15 10:14:18,417 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 17, in <module>
+    from ApiManager.tasks import main_hrun
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/tasks.py", line 11, in <module>
+    from ApiManager.utils.common import timestamp_to_datetime
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 12, in <module>
+    from djcelery.models import PeriodicTask
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/djcelery/models.py", line 15, in <module>
+    from celery.utils.timeutils import timedelta_seconds
+ModuleNotFoundError: No module named 'celery.utils.timeutils'
+2022-05-15 10:15:09,421 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 18, in <module>
+    from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 12, in <module>
+    from djcelery.models import PeriodicTask
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/djcelery/models.py", line 15, in <module>
+    from celery.utils.timeutils import timedelta_seconds
+ModuleNotFoundError: No module named 'celery.utils.timeutils'
+2022-05-15 10:44:49,719 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 11, in <module>
+    from djcelery.models import PeriodicTask
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:45:21,804 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 17, in <module>
+    from ApiManager.tasks import main_hrun
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/tasks.py", line 11, in <module>
+    from ApiManager.utils.common import timestamp_to_datetime
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 12, in <module>
+    from djcelery.models import PeriodicTask
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:46:00,806 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 18, in <module>
+    from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 12, in <module>
+    from djcelery.models import PeriodicTask
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:46:30,603 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 18, in <module>
+    from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 17, in <module>
+    from ApiManager.utils.task_opt import create_task
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/task_opt.py", line 3, in <module>
+    from djcelery import models as celery_models
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:52:54,007 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'http_runner_manager.userinfo' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 75, in register
+    msg = register_info_logic(**user_info)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 514, in register_info_logic
+    return add_register_data(**kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/operation.py", line 28, in add_register_data
+    if user_info.filter(username__exact=username).filter(status=1).count() > 0:
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1066, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'http_runner_manager.userinfo' doesn't exist")
+2022-05-16 09:32:47,461 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'http_runner_manager.userinfo' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 75, in register
+    msg = register_info_logic(**user_info)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 514, in register_info_logic
+    return add_register_data(**kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/operation.py", line 28, in add_register_data
+    if user_info.filter(username__exact=username).filter(status=1).count() > 0:
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1066, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'http_runner_manager.userinfo' doesn't exist")
+2022-05-16 11:25:35,315 [HttpRunnerManager:35] [operation:add_register_data] [INFO]- 新增用户：ApiManager.UserInfo.objects
+2022-05-16 11:25:45,647 [HttpRunnerManager:60] [views:login] [INFO]- 445333622@qq.com 登录失败, 请检查用户名或者密码
+2022-05-16 11:25:51,765 [HttpRunnerManager:60] [views:login] [INFO]- 445333622@qq.com 登录失败, 请检查用户名或者密码
+2022-05-16 11:26:04,638 [HttpRunnerManager:60] [views:login] [INFO]- 445333622@qq.com 登录失败, 请检查用户名或者密码
+2022-05-16 11:26:16,042 [HttpRunnerManager:55] [views:login] [INFO]- zsy 登录成功
+2022-05-16 11:27:23,725 [django.request:93] [base:get_response] [WARNING]- Not Found: /.well-known/change-password
+2022-05-16 11:27:23,733 [django.request:93] [base:get_response] [WARNING]- Not Found: /.well-known/resource-that-should-not-exist-whose-status-code-should-not-be-200
+2022-05-16 11:27:23,858 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2022-05-16 11:30:19,681 [HttpRunnerManager:62] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': 'sdtool', 'responsible_name': 'zsy', 'test_user': 'zsy', 'dev_user': 'zsy', 'publish_app': 'sdtool', 'simple_desc': 'fffff', 'other_desc': 'ffff'}
+2022-05-16 16:45:32,134 [HttpRunnerManager:55] [views:login] [INFO]- zsy 登录成功
+2022-05-17 09:56:55,538 [HttpRunnerManager:55] [views:login] [INFO]- zsy 登录成功
+2022-05-17 09:57:33,087 [HttpRunnerManager:110] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '下电api', 'test_user': 'zsy', 'simple_desc': '', 'other_desc': '', 'belong_project': <ProjectInfo: ProjectInfo object (1)>}
+2022-05-17 10:00:08,043 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- 下电提交用例添加成功: {'test': {'request': {'url': '127.0.0.1/poweroff', 'method': 'POST', 'json': {'id': 1}}, 'name': '下电提交'}}

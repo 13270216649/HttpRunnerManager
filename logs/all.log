@@ -1003,3 +1003,391 @@ ValueError: invalid literal for int() with base 10: '”√¿˝_quant_login_out(µ«»Îµ«
 2018-07-02 15:03:20,152 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/test_list/1/ HTTP/1.1" 200 22513
 2018-07-02 15:03:44,373 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 253
 2018-07-02 15:03:46,343 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/test_list/1/ HTTP/1.1" 200 27662
+2022-05-15 10:09:00,601 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2022-05-15 10:09:00,605 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2363
+2022-05-15 10:09:33,617 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 11, in <module>
+    from djcelery.models import PeriodicTask
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:09:33,696 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/register/ HTTP/1.1" 500 80245
+2022-05-15 10:13:11,973 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 11, in <module>
+    from djcelery.models import PeriodicTask
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/djcelery/models.py", line 15, in <module>
+    from celery.utils.timeutils import timedelta_seconds
+ModuleNotFoundError: No module named 'celery.utils.timeutils'
+2022-05-15 10:13:12,037 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/register/ HTTP/1.1" 500 96858
+2022-05-15 10:14:18,417 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 17, in <module>
+    from ApiManager.tasks import main_hrun
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/tasks.py", line 11, in <module>
+    from ApiManager.utils.common import timestamp_to_datetime
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 12, in <module>
+    from djcelery.models import PeriodicTask
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/djcelery/models.py", line 15, in <module>
+    from celery.utils.timeutils import timedelta_seconds
+ModuleNotFoundError: No module named 'celery.utils.timeutils'
+2022-05-15 10:14:18,493 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/register/ HTTP/1.1" 500 125792
+2022-05-15 10:15:09,421 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 18, in <module>
+    from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 12, in <module>
+    from djcelery.models import PeriodicTask
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/djcelery/models.py", line 15, in <module>
+    from celery.utils.timeutils import timedelta_seconds
+ModuleNotFoundError: No module named 'celery.utils.timeutils'
+2022-05-15 10:15:09,490 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/register/ HTTP/1.1" 500 113107
+2022-05-15 10:44:49,719 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 11, in <module>
+    from djcelery.models import PeriodicTask
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:44:49,804 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/register/ HTTP/1.1" 500 81918
+2022-05-15 10:45:21,804 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 17, in <module>
+    from ApiManager.tasks import main_hrun
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/tasks.py", line 11, in <module>
+    from ApiManager.utils.common import timestamp_to_datetime
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 12, in <module>
+    from djcelery.models import PeriodicTask
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:45:21,876 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/register/ HTTP/1.1" 500 110860
+2022-05-15 10:46:00,806 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 18, in <module>
+    from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 12, in <module>
+    from djcelery.models import PeriodicTask
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:46:00,891 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/register/ HTTP/1.1" 500 98175
+2022-05-15 10:46:30,603 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 10, in process
+    app = __import__("%s.views" % app)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 18, in <module>
+    from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 17, in <module>
+    from ApiManager.utils.task_opt import create_task
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/task_opt.py", line 3, in <module>
+    from djcelery import models as celery_models
+ModuleNotFoundError: No module named 'djcelery'
+2022-05-15 10:46:30,673 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/register/ HTTP/1.1" 500 110708
+2022-05-15 10:47:30,587 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8108
+2022-05-15 10:47:30,610 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20060
+2022-05-15 10:47:30,612 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2022-05-15 10:47:30,612 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2022-05-15 10:47:30,616 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2022-05-15 10:47:30,618 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2022-05-15 10:47:30,619 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2022-05-15 10:47:38,162 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2022-05-15 10:47:38,182 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpg HTTP/1.1" 200 135990
+2022-05-15 10:52:54,007 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'http_runner_manager.userinfo' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 75, in register
+    msg = register_info_logic(**user_info)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 514, in register_info_logic
+    return add_register_data(**kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/operation.py", line 28, in add_register_data
+    if user_info.filter(username__exact=username).filter(status=1).count() > 0:
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1066, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'http_runner_manager.userinfo' doesn't exist")
+2022-05-15 10:52:54,086 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/register/ HTTP/1.1" 500 21897
+2022-05-16 09:32:42,062 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 304 0
+2022-05-16 09:32:47,461 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'http_runner_manager.userinfo' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/views.py", line 75, in register
+    msg = register_info_logic(**user_info)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/common.py", line 514, in register_info_logic
+    return add_register_data(**kwargs)
+  File "/Users/zhengshunyong/work/ICBC/HttpRunnerManager/ApiManager/utils/operation.py", line 28, in add_register_data
+    if user_info.filter(username__exact=username).filter(status=1).count() > 0:
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1066, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/zhengshunyong/work/venv/http_runner_manager/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'http_runner_manager.userinfo' doesn't exist")
+2022-05-16 09:32:47,515 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/register/ HTTP/1.1" 500 21954
+2022-05-16 11:25:35,315 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/register/ HTTP/1.1" 200 33
+2022-05-16 11:25:35,343 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2022-05-16 11:25:35,367 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/style.css HTTP/1.1" 200 1638
+2022-05-16 11:25:35,376 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpg HTTP/1.1" 304 0
+2022-05-16 11:25:35,384 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/main_bg.png HTTP/1.1" 200 2801
+2022-05-16 11:25:35,404 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/fonts/icomoon.ttf?u4m6fy HTTP/1.1" 200 6900
+2022-05-16 11:25:45,652 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 200 3876
+2022-05-16 11:25:51,775 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 200 3876
+2022-05-16 11:26:04,645 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 200 3876
+2022-05-16 11:26:16,048 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2022-05-16 11:26:16,106 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2022-05-16 11:26:16,141 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 200 19660
+2022-05-16 11:26:16,143 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 200 20844
+2022-05-16 11:26:16,145 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 200 1004
+2022-05-16 11:26:16,146 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 200 13209
+2022-05-16 11:27:23,725 [django.request:93] [base:get_response] [WARNING]- Not Found: /.well-known/change-password
+2022-05-16 11:27:23,726 [django.server:124] [basehttp:log_message] [WARNING]- "GET /.well-known/change-password HTTP/1.1" 404 2464
+2022-05-16 11:27:23,733 [django.request:93] [base:get_response] [WARNING]- Not Found: /.well-known/resource-that-should-not-exist-whose-status-code-should-not-be-200
+2022-05-16 11:27:23,733 [django.server:124] [basehttp:log_message] [WARNING]- "GET /.well-known/resource-that-should-not-exist-whose-status-code-should-not-be-200 HTTP/1.1" 404 2617
+2022-05-16 11:27:23,858 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2022-05-16 11:27:23,859 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2365
+2022-05-16 11:27:47,861 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2022-05-16 11:28:02,964 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 26261
+2022-05-16 11:28:08,793 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_project/ HTTP/1.1" 200 17486
+2022-05-16 11:28:54,677 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_project/ HTTP/1.1" 200 24
+2022-05-16 11:29:41,483 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_project/ HTTP/1.1" 200 24
+2022-05-16 11:30:19,681 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_project/ HTTP/1.1" 200 20
+2022-05-16 11:30:19,793 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29270
+2022-05-16 11:30:19,838 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 200 1004
+2022-05-16 11:30:19,839 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 200 13209
+2022-05-16 11:30:19,839 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 200 19660
+2022-05-16 11:30:19,841 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 200 20844
+2022-05-16 11:32:06,808 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2022-05-16 16:44:59,511 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 302 0
+2022-05-16 16:44:59,515 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2022-05-16 16:44:59,560 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/style.css HTTP/1.1" 200 1638
+2022-05-16 16:44:59,572 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/main_bg.png HTTP/1.1" 200 2801
+2022-05-16 16:44:59,576 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpg HTTP/1.1" 200 135990
+2022-05-16 16:44:59,642 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/fonts/icomoon.ttf?u4m6fy HTTP/1.1" 200 6900
+2022-05-16 16:45:32,140 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2022-05-16 16:45:32,176 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2022-05-16 16:45:32,209 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 304 0
+2022-05-16 16:45:32,218 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 304 0
+2022-05-16 16:45:32,225 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 304 0
+2022-05-16 16:45:32,231 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 304 0
+2022-05-16 16:46:02,037 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2022-05-16 16:46:02,095 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 200 19660
+2022-05-16 16:46:02,097 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 200 1004
+2022-05-16 16:46:02,098 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 200 13209
+2022-05-16 16:46:02,099 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 200 20844
+2022-05-16 16:54:13,360 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18310
+2022-05-16 16:54:34,205 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29271
+2022-05-16 16:54:56,830 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18310
+2022-05-16 16:58:33,828 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29271
+2022-05-17 09:56:52,366 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 302 0
+2022-05-17 09:56:52,375 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2022-05-17 09:56:52,406 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/style.css HTTP/1.1" 304 0
+2022-05-17 09:56:52,407 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/main_bg.png HTTP/1.1" 304 0
+2022-05-17 09:56:52,407 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpg HTTP/1.1" 304 0
+2022-05-17 09:56:52,473 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/fonts/icomoon.ttf?u4m6fy HTTP/1.1" 304 0
+2022-05-17 09:56:55,547 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2022-05-17 09:56:55,617 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18310
+2022-05-17 09:56:55,672 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 304 0
+2022-05-17 09:56:55,675 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 304 0
+2022-05-17 09:56:55,676 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 304 0
+2022-05-17 09:56:55,699 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 304 0
+2022-05-17 09:57:05,222 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 25508
+2022-05-17 09:57:09,569 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_module/ HTTP/1.1" 200 16150
+2022-05-17 09:57:33,089 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_module/ HTTP/1.1" 200 19
+2022-05-17 09:57:33,345 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 28071
+2022-05-17 09:57:45,074 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34141
+2022-05-17 09:57:55,989 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 12
+2022-05-17 09:57:57,587 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2022-05-17 09:57:57,588 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2022-05-17 10:00:05,294 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 12
+2022-05-17 10:00:08,045 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 17
+2022-05-17 10:00:08,196 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 24569
+2022-05-17 10:00:08,529 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2022-05-17 10:08:04,281 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_config/ HTTP/1.1" 200 24517
+2022-05-17 10:11:07,965 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 28071
